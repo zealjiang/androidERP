@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.fragment.CustomerFragment">
+
+    <include layout="@layout/comm_white_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cur_pw"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/tv_pw_name"
+                style="@style/list_item_left_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:text="当前密码"
+                android:textSize="@dimen/text_medium_16sp"
+                android:textColor="@color/common_gray_dark"
+                android:visibility="gone"
+                />
+
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/cet_cur_pw"
+                style="@style/list_item_right_style"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent_s"
+                android:hint="当前密码"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:textColorHint="@color/common_gray_light"
+                android:textCursorDrawable="@drawable/text_cursor_color"
+                android:textSize="@dimen/text_medium_16sp"/>
+            <!-- android:layout_toRightOf="@+id/tv_pw_name" -->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_new_pw"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_new_pw"
+                style="@style/list_item_left_style"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:text="新密码"
+                android:textSize="@dimen/text_medium_16sp"
+                android:textColor="@color/common_gray_dark"
+                android:visibility="gone"
+                />
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/cet_new_pw"
+                style="@style/list_item_right_style"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent_s"
+                android:hint="新密码"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:textColorHint="@color/common_gray_light"
+                android:textCursorDrawable="@drawable/text_cursor_color"
+                android:textSize="@dimen/text_medium_16sp"/><!-- android:layout_toRightOf="@+id/tv_new_pw" -->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_verify_pw"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_verify_pw"
+                style="@style/list_item_left_style"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:text="二次确认"
+                android:textSize="@dimen/text_medium_16sp"
+                android:textColor="@color/common_gray_dark"
+                android:visibility="gone"
+                />
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/cet_verify_pw"
+                style="@style/list_item_right_style"
+                android:layout_width="fill_parent"
+                android:layout_toRightOf="@+id/tv_verify_pw"
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent_s"
+                android:hint="二次确认"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:textColorHint="@color/common_gray_light"
+                android:textCursorDrawable="@drawable/text_cursor_color"
+                android:textSize="@dimen/text_medium_16sp"/>
+            <!-- -->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"/>
+
+    </LinearLayout>
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:id="@+id/btn_confirm"
+        style="@style/style_common_blue_round_corner_button"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:text="@string/confirm" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEFFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/popupwindow_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@color/glass">
+
+        <TextView
+            android:id="@+id/tvFollowup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="45dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/genjin"
+            android:text="@string/followup"
+            android:textColor="@color/common_gray_dark" />
+
+        <TextView
+            android:id="@+id/tvVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/daodian"
+            android:text="@string/order_visit"
+            android:textColor="@color/common_gray_dark" />
+
+        <TextView
+            android:id="@+id/tvBattleFailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="45dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/zhanbai_tx"
+            android:gravity="center_horizontal"
+            android:text="@string/battle_failed"
+            android:textColor="@color/common_gray_dark" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:src="@mipmap/ic_close" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    tools:context="com.jzg.erp.ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_bottom"
+            android:src="@mipmap/ic_jtd_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_height"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <View style="@style/style_common_line" />
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/etAccount"
+                style="@style/style_common_edittext"
+                android:drawableLeft="@mipmap/ic_phone"
+                android:drawablePadding="@dimen/smaple_pading"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:hint="@string/phone_number" />
+
+            <View
+                style="@style/style_common_line"
+                android:layout_marginLeft="@dimen/smaple_pading" />
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/etPassword"
+                style="@style/style_common_edittext"
+                android:drawableLeft="@mipmap/ic_pwd"
+                android:drawablePadding="@dimen/smaple_pading"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <View style="@style/style_common_line" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:id="@+id/btnLogin"
+        style="@style/style_common_blue_round_corner_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:text="@string/login" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFindPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_less"
+        android:text="@string/find_back_pwd"
+        android:textColor="@color/common_blue_normal"
+        android:textSize="@dimen/text_medium_16sp"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/edit_height"
+        android:textColor="@color/common_gray_light"
+        android:textSize="@dimen/text_small_12sp" />
+
+</RelativeLayout>

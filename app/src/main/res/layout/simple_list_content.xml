@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 包含一行简单文字描述的list列表类容布局及少量图片分割线布局控件 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/left_line"
+        android:layout_width="1dip"
+        android:layout_height="25dip"
+        android:background="@color/common_gray_line"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/car_list_content_alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/left_line"
+        android:background="@color/white"
+        android:paddingLeft="13dip"
+        android:textColor="#3399cc"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="1dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/car_list_content_alpha"
+        android:background="@color/common_gray_line"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/car_list_content_image"
+        android:layout_width="0dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/car_list_content_alpha"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/car_list_content_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_list_content_image"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@+id/car_list_content_image"
+        android:singleLine="false"
+        android:textColor="@color/grey3"
+        android:textSize="14sp" />
+
+</RelativeLayout>

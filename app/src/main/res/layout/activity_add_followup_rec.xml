@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_white_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llPreBuyTimeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View style="@style/style_common_line" />
+
+                    <LinearLayout
+                        android:id="@+id/llPreBuyTime"
+                        style="@style/common_data_item_layout">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/common_data_item_key"
+                            android:text="@string/prebuy_time" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvPreBuyTime"
+                            style="@style/style_right_arr_text"
+                            android:text="@string/buy_class" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFailedContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View style="@style/style_common_line" />
+
+                    <LinearLayout
+                        android:id="@+id/llFailedReason"
+                        style="@style/common_data_item_layout"
+                        android:layout_height="wrap_content"
+                        android:minHeight="54dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvFailedReasonKey"
+                            style="@style/common_data_item_key"
+                            android:text="@string/failed_reason" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tvFailedReason"
+                            style="@style/style_right_arr_text"
+                            android:maxLines="3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/fab_margin">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvFollowUpRecKey"
+                        style="@style/common_data_item_key"
+                        android:text="@string/followup_rec" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/etFollowUpRec"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="@dimen/layout_marginTop"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="@string/content"
+                            android:minHeight="@dimen/layout_height"
+                            android:textSize="@dimen/text_medium_14sp" />
+                    </ScrollView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVisitContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llVisitDate"
+                    style="@style/common_data_item_layout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvVisitDateKey"
+                        style="@style/common_data_item_key"
+                        android:text="@string/order_visit_date" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvVisitDate"
+                        style="@style/style_right_arr_text" />
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llVisitDuration"
+                    style="@style/common_data_item_layout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/common_data_item_key"
+                        android:text="@string/timeDuration" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvVisitDuration"
+                        style="@style/style_right_arr_text"
+                        android:text="@string/time_distance" />
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNextFollowup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llNextFollowupTime"
+                    style="@style/common_data_item_layout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvNextFollowupTimeKey"
+                        style="@style/common_data_item_key"
+                        android:text="@string/next_followup_time" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvNextFollowupTime"
+                        style="@style/style_right_arr_text" />
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llTimeDuration"
+                    style="@style/common_data_item_layout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/common_data_item_key"
+                        android:text="@string/timeDuration" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvTimeDuration"
+                        style="@style/style_right_arr_text"
+                        android:text="@string/time_distance" />
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+
+                <LinearLayout
+                    android:id="@+id/llExtraInfo"
+                    style="@style/common_data_item_layout">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/common_data_item_key"
+                        android:text="@string/extra_info" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvExtraInfo"
+                        style="@style/style_right_arr_text"
+                        android:hint="@string/text_max" />
+                </LinearLayout>
+
+                <View style="@style/style_common_line" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.FollowUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.jzg.erp.widget.CustomButton
+            android:id="@+id/btnAddFollowupRec"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_todo_rec"
+            android:textColor="@color/common_blue_normal"
+            app:pressed_color="@color/common_gray_bg"
+            app:round_radius="3dp"
+            app:shape_type="rectangle"
+            app:unpressed_color="@android:color/white" />
+        <LinearLayout
+            android:id="@+id/llContentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

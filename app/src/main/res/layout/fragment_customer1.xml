@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jzg.erp.widget.XRecyclerView
+        android:id="@+id/customer_xrc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_gray_bg"
+        android:orientation="vertical"
+        tools:context=".ui.fragment.CustomerFragmentWithSideBar"></com.jzg.erp.widget.XRecyclerView>
+
+    <com.jzg.erp.widget.ErrorView
+        android:id="@+id/err_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.jzg.erp.widget.ErrorView>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/ivState"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/ivDot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/red_dot" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ctvStatus"
+        android:layout_toRightOf="@+id/rlContainer"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTaskName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_medium_16sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="@dimen/text_medium_14sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/common_gray_dark"
+            android:textSize="@dimen/text_medium_14sp" />
+
+    </LinearLayout>
+
+    <com.jzg.erp.widget.CustomTextView
+        android:id="@+id/ctvStatus"
+        style="@style/style_common_stroke_roundcorner_textview"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/jt" />
+
+
+</RelativeLayout>

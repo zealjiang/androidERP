@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/common_gray_line" />
+
+    <RelativeLayout
+        android:id="@+id/tools_xianqian_city_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            style="@style/common_grey_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市" />
+
+        <TextView
+            android:id="@+id/tools_xianqian_city_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dip"
+            android:drawableRight="@mipmap/jt"
+            style="@style/common_light_grey_text_style"
+            android:text="不限" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tools_xianqian_city_result_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_gray_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+         >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/common_gray_line"
+            android:layout_weight="1"
+             />
+        <TextView
+            android:id="@+id/tools_xianqian_city_result_text"
+            style="@style/common_light_grey_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dip"
+            android:text="查询结果"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/common_gray_line"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/common_gray_line"
+        />
+
+    <LinearLayout
+        android:id="@+id/tools_xianqian_city_resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/common_grey_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+             />
+
+        <TextView
+            android:id="@+id/tools_xianqian_city_result"
+            style="@style/common_grey_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/common_gray_line"
+        />
+</LinearLayout>

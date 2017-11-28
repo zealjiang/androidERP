@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.jzg.erp.ui.activity.AddFocusCarActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:background="@color/common_gray_bg"
+        >
+
+        <com.jzg.erp.widget.ClearableEditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/widget_margin_right"
+            android:background="@mipmap/bg_002"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/sousuo"
+            android:drawablePadding="@dimen/smaple_pading"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch"
+            android:maxLength="17"
+            android:padding="@dimen/smaple_pading"
+            android:textSize="@dimen/text_medium_16sp"
+            android:hint="@string/hint"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="@dimen/edit_height"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/paddingRight"
+            android:text="搜索"
+            android:textColor="@color/common_blue_normal"
+            android:textSize="@dimen/text_medium_16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jzg.erp.widget.XRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        </com.jzg.erp.widget.XRecyclerView>
+        <com.jzg.erp.widget.SpecifiedTextView
+            android:id="@+id/text_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            />
+        <com.jzg.erp.widget.ErrorView
+            android:id="@+id/err_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></com.jzg.erp.widget.ErrorView>
+    </RelativeLayout>
+</LinearLayout>

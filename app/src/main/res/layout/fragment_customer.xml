@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CustomerFragmentWithSideBar">
+
+    <include
+        android:id="@+id/title_b"
+        layout="@layout/comm_white_title" />
+
+    <org.honorato.multistatetogglebutton.MultiStateToggleButton
+        android:id="@+id/mstl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/title_b"
+        android:layout_margin="20dp"
+        app:mstbPrimaryColor="@color/common_blue_normal"
+        app:mstbSecondaryColor="@android:color/white"
+        app:values="@array/customer_type" />
+    <com.jzg.erp.widget.XRecyclerView
+        android:id="@+id/customer_xrc"
+        android:layout_width="match_parent"
+        android:layout_below="@id/mstl"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/voip_toast_bg"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+
+    <com.jzg.erp.widget.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mstl"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center" />
+</RelativeLayout>

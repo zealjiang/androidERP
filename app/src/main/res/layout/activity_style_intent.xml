@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F8"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.activity.StyleIntentActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <com.jzg.erp.widget.CustomButton
+        android:id="@+id/btn_intent"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/change_loved_car"
+        android:textColor="@color/common_blue_normal"
+        app:pressed_color="@color/common_gray_light"
+        app:round_radius="3dp"
+        app:shape_type="rectangle"
+        app:unpressed_color="@android:color/white" />
+
+    <com.jzg.erp.widget.TagCloudLinkView
+        android:id="@+id/tag_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        app:deletableTextColor="#ff717171"
+        app:deletableTextSize="8sp"
+        app:isDeletable="true"
+        app:tagLayoutColor="#FFFFFF"
+        app:tagTextColor="#ff464646"
+        app:tagTextSize="6sp" />
+
+</LinearLayout>

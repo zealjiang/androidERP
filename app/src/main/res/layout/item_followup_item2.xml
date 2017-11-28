@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rlGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jzg.erp.widget.CustomTextView
+            android:id="@+id/tvGroupTitle"
+            app:textRadius="45dp"
+            app:textSolidColor="@android:color/white"
+            android:layout_width="160dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/common_gray_dark"
+            android:textSize="@dimen/text_medium_14sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvCreateTime"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/common_gray_dark"
+            android:textSize="@dimen/text_medium_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivState"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvNextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium_16sp"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvContent"
+                    style="@style/common_data_item_value"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

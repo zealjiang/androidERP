@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <WebView
+        android:id="@+id/tools_xianqian_pfbz_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+    </WebView>
+
+    <com.jzg.erp.widget.ErrorView
+        android:id="@+id/err_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+    </com.jzg.erp.widget.ErrorView>
+</RelativeLayout>

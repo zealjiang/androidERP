@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical" >
+
+    <include layout="@layout/comm_white_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_distance"
+        android:background="@color/common_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/btn_radius" >
+
+        <ListView
+            android:id="@+id/province_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/common_gray_line"
+            android:dividerHeight="@dimen/padding_distance"
+            android:scrollbars="none" >
+        </ListView>
+
+        <SlidingDrawer
+            android:id="@+id/car_detail_info_city_drawer"
+            android:layout_width="@dimen/layout_width_value"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:content="@+id/car_detail_info_city_content_layout"
+            android:handle="@+id/car_detail_info_city_handle"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/car_detail_info_city_handle"
+                android:layout_width="@dimen/round_radius"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@id/car_detail_info_city_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_gray_line" >
+                </ImageView>
+
+                <ListView
+                    android:id="@+id/car_detail_info_city_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/common_gray_line"
+                    android:dividerHeight="@dimen/padding_distance"
+                    android:paddingRight="@dimen/tag_margin"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+
+</LinearLayout>

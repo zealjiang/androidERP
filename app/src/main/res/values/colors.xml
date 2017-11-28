@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/common_blue_normal</color>
+    <color name="colorPrimaryDark">@color/common_blue_dark</color>
+    <color name="colorAccent">#f8eb3a</color>
+
+
+    <color name="common_blue_dark">#135db8</color>
+    <color name="common_blue_normal">#5495e6</color>
+    <color name="common_blue_light">#24c7fc</color>
+    <color name="common_red_normal">#ff4c4d</color>
+    <color name="common_gray_dark">#6c6c6c</color>
+    <color name="common_gray_light">#999999</color>
+    <color name="common_gray_line">#dadee6</color>
+    <color name="common_gray_bg">#f0f3f8</color>
+    <color name="common_yellow">#f8c100</color>
+    <color name="common_green">#78c14a</color>
+
+    <color name="white">#ffffff</color>
+    <color name="pink">#FF6600</color>
+    <color name="pink_dark">#B84A01</color>
+    <color name="text_blue">#0092E8</color>
+    <color name="glass">#00E4E4E4</color>
+    <color name="half_trasparent">#88FFFFFF</color>
+
+    <color name="unpressed_color_s">#fff44336</color>
+    <color name="pressed_color_s">#ffd32f2f</color>
+    <color name="unpressed_color_s2">#ff3f51b5</color>
+    <color name="pressed_color_s2">#ff303f9f</color>
+    <color name="unpressed_color_s3">#ffffeb3b</color>
+    <color name="pressed_color_s3">#fffbc02d</color>
+    <color name="ripple_color_s">#ffeeeeee</color>
+    <color name="transparent_s">#00000000</color>
+
+
+    <color name="gray_1">#f0f0f0</color>
+    <color name="gray_2">#f3f3f3</color>
+    <color name="gray_3">#f5f5f5</color>
+    <color name="gray_4">#eaeaea</color>
+    <color name="gray_5">#d9d9d9</color>
+    <color name="gray_6">#cccccc</color>
+    <color name="gray_7">#aaaaaa</color>
+    <color name="gray_8">#a5a5a5</color>
+    <color name="gray_9">#7d7d7d</color>
+    <color name="gray_10">#777777</color>
+    <color name="gray_11">#666666</color>
+    <color name="gray_12">#484848</color>
+    <color name="gray_13">#3c3c3c</color>
+    <color name="grey3">#333333</color>
+    <color name="grey2">#ededed</color>
+
+    <color name="red_1">#fde0dc</color>
+    <color name="red_2">#f9bdbb</color>
+    <color name="red_3">#f69988</color>
+    <color name="red_4">#f36c60</color>
+    <color name="red_5">#e84e40</color>
+    <color name="red_6">#e51c23</color>
+    <color name="red_7">#dd191d</color>
+    <color name="red_8">#d01716</color>
+    <color name="red_9">#c41413</color>
+    <color name="red_10">#b01210</color>
+
+
+    <color name="purple_1">#f3e5f5</color>
+    <color name="purple_2">#e1bee7</color>
+    <color name="purple_3">#ce93d8</color>
+    <color name="purple_4">#ba68c8</color>
+    <color name="purple_5">#ab47bc</color>
+    <color name="purple_6">#9c27b0</color>
+    <color name="purple_7">#8e24aa</color>
+    <color name="purple_8">#7b1fa2</color>
+    <color name="purple_9">#6a1b9a</color>
+    <color name="purple_10">#49148a</color>
+
+    <color name="green_1">#e0f2f1</color>
+    <color name="green_2">#b2dfdb</color>
+    <color name="green_3">#80cbc4</color>
+    <color name="green_4">#4db6ac</color>
+    <color name="green_5">#26a69a</color>
+    <color name="green_6">#169688</color>
+    <color name="green_7">#13897b</color>
+    <color name="green_8">#0f796b</color>
+    <color name="green_9">#0c695c</color>
+    <color name="green_10">#064d40</color>
+    <color name="green_11">#78C14A</color>
+
+
+    <color name="orange_1">#fef176</color>
+    <color name="orange_2">#fed54f</color>
+    <color name="orange_3">#fdb74d</color>
+    <color name="orange_4">#fda729</color>
+    <color name="orange_5">#fd9827</color>
+    <color name="orange_6">#fda028</color>
+    <color name="orange_7">#fd9025</color>
+    <color name="orange_8">#f57c22</color>
+    <color name="orange_9">#ef6c1f</color>
+    <color name="orange_10">#fd6f21</color>
+    <color name="orange_11">#e4501b</color>
+    <color name="black_font">#ff000000</color>
+    <color name="gray_font">#222222</color>
+
+    <color name="title">#f5f5f5</color>
+
+    <color name="gray_common_bg">@color/gray_2</color>
+    <color name="gray_common_line">@color/gray_7</color>
+    <color name="green_common_text">@color/green_7</color>
+    <color name="dialog_text_color">@color/gray_12</color>
+    <color name="dialog_bg_half_color">#99000000</color>
+
+    <!--状态-->
+    <color name="zaishoubg">#4790ef</color>
+    <color name="yishouchubg">#7a7a7a</color>
+    <color name="yiyudingbg">#ff612a</color>
+    <color name="yixiajiastroke">#e0e5ea</color>
+    <color name="yiwanchengstroke">#dddddd</color>
+    <color name="yishangjiastroke">#5495e6</color>
+    <color name="yixiajiatext">#9fa5ab</color>
+    <color name="yiwanchengtext">#cccccc</color>
+    <color name="yishangjiatext">#5495e6</color>
+    <!-- 帖子内容背景 -->
+    <color name="topic_content_bg">#f8f8f8</color>
+</resources>

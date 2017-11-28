@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_white_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/btn_margin"
+        android:paddingLeft="@dimen/btn_margin"
+        android:paddingRight="@dimen/btn_margin"
+        android:paddingTop="@dimen/btn_margin">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            /><!--android:textCursorDrawable="@color/common_blue_normal" -->
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widget_width"
+            android:gravity="center_vertical"
+             />
+
+        <com.jzg.erp.widget.CustomRippleButton
+            android:id="@+id/vin_submit"
+            style="@style/style_common_blue_round_corner_button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:text="@string/save_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

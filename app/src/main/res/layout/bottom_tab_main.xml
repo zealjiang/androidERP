@@ -1,0 +1,38 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.jzg.erp.widget.bottombar.RadioImageView
+            android:id="@+id/tab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tab_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_toRightOf="@+id/tab_icon"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:singleLine="true"
+            android:textSize="3sp"
+            />
+    </RelativeLayout>
+
+    <com.jzg.erp.widget.bottombar.RadioTextView
+        android:id="@+id/tab_title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+
+</merge>

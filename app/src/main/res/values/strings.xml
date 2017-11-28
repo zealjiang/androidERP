@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">捷通达ERP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_theme">theme</string>
+    <string name="pref_theme_default">dark</string>
+    <string-array name="pref_theme_list_entries">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+    <string-array name="pref_theme_list_values">
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+
+    <string-array name="pref_example_list_entries">
+        <item>Item1</item>
+        <item>Item2</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>item1</item>
+        <item>item2</item>
+    </string-array>
+
+
+    <string name="repository_website">Repository website</string>
+    <string name="all_my_repositories">All my repositories</string>
+    <string name="all_my_apps">All my apps</string>
+    <string name="more_info">More info</string>
+
+    <string-array name="task_category">
+        <item>今日事项</item>
+        <item>全部待办</item>
+    </string-array>
+    <string-array name="customer_type">
+        <item>意向</item>
+        <item>预订</item>
+        <item>成交</item>
+        <item>战败</item>
+    </string-array>
+    <string-array name="car_detail">
+        <item>匹配客户</item>
+        <item>关注</item>
+    </string-array>
+
+    <string name="popular">Popular</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="phone_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="find_back_pwd">找回密码</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="sms_code">短信验证码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="repeate_pwd">重复密码</string>
+    <string name="next_step">下一步</string>
+    <string name="confirm">确定</string>
+    <string name="new_pwd_null">新密码为空</string>
+    <string name="repeate_pwd_null">重复密码为空</string>
+    <string name="twice_pwd_diff">两次密码输入不一致，请重新输入!</string>
+    <string name="new_pwd_modified">新密码修改成功!</string>
+    <string name="input_phone_number">请填写手机号</string>
+    <string name="illegal_phone_number">不是合法的手机号</string>
+    <string name="phone_cannot_be_null">手机号不能为空</string>
+    <string name="pwd_cannot_be_null">密码不能为空</string>
+    <string name="phone_or_pwd_error">手机号或密码不正确</string>
+    <string name="modify_pwd_failed">修改密码失败</string>
+    <string name="smscode_canot_be_null">验证码不能为空</string>
+    <string name="wait2do">待办事项</string>
+    <string name="carsouce">车源</string>
+    <string name="customer">客户</string>
+
+    <string name="mine">我的信息</string>
+    <string name="account_inf">帐户信息</string>
+    <string name="setting">设置</string>
+    <string name="head">头像</string>
+    <string name="name">姓名</string>
+    <string name="phone">手机号</string>
+    <string name="department">部门</string>
+    <string name="job">职务</string>
+    <string name="shop">所属店</string>
+    <string name="tool">工具</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="break_rules_query">违章查询</string>
+    <string name="limit_change_query">限迁标准查询</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="exit">退出登录</string>
+    <string name="error_noConnect">无法与服务器建立连接，请重试。</string>
+
+
+    <string name="please_wait_amoment">请稍等...</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_about">关于我</string>
+    <string name="menu_setting">设置</string>
+    <string name="search_empty">请输入联系人/手机号/客户名称模糊匹配</string>
+    <string name="search_message">请输入车型/Vin码模糊搜索</string>
+    <string name="modify_loved_car">修改购车意向</string>
+    <string name="change_loved_car">+添加意向车型</string>
+    <string name="wanted_car">意向车型</string>
+    <string name="gear">变速箱</string>
+    <string name="budget">预算</string>
+    <string name="extra">备注</string>
+    <string name="customer_name">客户名称</string>
+    <string name="customer_type">客户类型</string>
+    <string name="order_time">预约时间</string>
+    <string name="buy_via">购车方式</string>
+    <string name="add_todo_rec">+填写跟进记录</string>
+    <string name="add_genjin_item">+添加跟进事项</string>
+    <string name="contact">联系人</string>
+    <string name="gender">性别</string>
+    <string name="idcard">身份证号</string>
+    <string name="customer_from">来源</string>
+    <string name="customer_status">客户状态</string>
+    <string name="prebuy_time">预购时间</string>
+    <string name="next_followup_time">下次跟进日期</string>
+    <string name="timeDuration">时间段</string>
+    <string name="extra_info">特殊说明</string>
+    <string name="followup_rec">跟进记录*</string>
+    <string name="followup_result">跟进结果*</string>
+    <string name="reason_price">价格原因</string>
+    <string name="reason_car">车况原因</string>
+    <string name="reason_other">其他原因</string>
+    <string name="zone_policy">区域政策</string>
+    <string name="tab_01">待办</string>
+    <string name="tab_02">客户</string>
+    <string name="tab_03">车源</string>
+    <string name="tab_04">我</string>
+    <string name="empty_text">暂无今日数据</string>
+    <string name="error_text">网路异常，请重新加载</string>
+    <string name="customer_info">资料</string>
+    <string name="todo">跟进</string>
+    <string name="item">事项</string>
+    <string name="focus_car">关注车</string>
+    <string name="order_visit_date">预约到店日期*</string>
+    <string name="order_visit">预约到店</string>
+    <string name="followup">继续跟进</string>
+    <string name="battle_failed">战败</string>
+    <string name="failed_reason">战败原因*</string>
+    <string name="selected_date_cannot_before_than_today">不能选择今天之前的日期</string>
+
+    <string name="pipeikehu">匹配客户</string>
+    <string name="guanzhu">关注</string>
+
+
+    <string name="hint">请输入车型/VIN码模糊匹配</string>
+    <string name="submit">提交</string>
+    <string name="time_distance">随时</string>
+    <string name="text_max">最多输入20字</string>
+    <string name="buy_class">无等级</string>
+    <string name="content">填写跟进记录，限300字</string>
+    <string name="car_type">本田飞度 丰田卡罗拉 大众帕萨特 别克君越 丰田汉兰达 萨特 别克君越 丰田汉兰达 萨特 别克君越 丰田汉兰达</string>
+    <string name="Transmission_box">AT</string>
+    <string name="budget_value">3~5W</string>
+    <string name="remarks">5年内日系轿车</string>
+    <string name="old_pwd">当前密码</string>
+    <string name="enter_old_pwd">请输入当前密码</string>
+    <string name="enter_new_pwd">新密码</string>
+    <string name="ensure_new_pwd">二次确认</string>
+    <string name="enter_new_pwd_twice">二次确认</string>
+    <string name="person_name">张良</string>
+    <string name="telephone">13843838438</string>
+    <string name="ensure_error">请确认车架号无误</string>
+    <string name="save_button">保存</string>
+    <string name="version_code">版本号V1.0.0</string>
+    <string name="account_info">帐户信息</string>
+    <string name="take_photo">拍照</string>
+
+
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+</resources>

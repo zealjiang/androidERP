@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.activity.BuyCarIntentActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <View
+        style="@style/style_common_line"
+        android:layout_marginTop="@dimen/btn_margin" />
+
+    <RelativeLayout
+        android:id="@+id/linear_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/common_data_item_layout_vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvWantedCarLeft"
+                style="@style/common_data_item_key1"
+                android:text="@string/wanted_car" />
+
+            <TextView
+                android:id="@+id/tvWantedCar"
+                style="@style/common_data_item_value_style"
+                android:layout_marginTop="@dimen/item_margin"
+                android:paddingRight="@dimen/item_margin"
+                android:maxLines="10"
+            />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jt"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <View style="@style/style_common_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_biansu"
+        style="@style/common_data_item_layout"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/common_data_item_key"
+            android:id="@+id/tvGearLeft"
+            android:text="@string/gear" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGear"
+            style="@style/common_data_item_value"
+            android:drawableRight="@mipmap/jt"/>
+    </LinearLayout>
+
+    <View style="@style/style_common_line" />
+
+    <LinearLayout
+        android:id="@+id/linear_yusuan"
+        style="@style/common_data_item_layout"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/common_data_item_key"
+            android:text="@string/budget" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBudget"
+            style="@style/common_data_item_value"
+            android:drawableRight="@mipmap/jt"/>
+    </LinearLayout>
+
+    <View style="@style/style_common_line" />
+
+    <RelativeLayout
+        android:id="@+id/linear_beizhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/common_data_item_layout_vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                style="@style/common_data_item_key1"
+                android:text="@string/extra" />
+
+            <TextView
+                android:id="@+id/tvExtraInfo"
+                style="@style/beizhu_data_item_value"
+                android:layout_marginTop="@dimen/smaple_pading"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jt"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/style_common_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/llLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvGenjinTimeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跟进时间"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvExtraLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="特殊说明"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/llLeft"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvGenjinTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/common_gray_dark"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvExtra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/common_gray_dark"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+            </LinearLayout>
+
+            <com.jzg.erp.widget.CustomTextView
+                android:id="@+id/ctvStatus"
+                style="@style/style_common_stroke_roundcorner_textview"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tvArrow"
+                android:layout_toRightOf="@+id/ivHeader"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvTaskName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/common_gray_dark"
+                    android:textSize="@dimen/text_medium_14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tvArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/jt" />
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+    </LinearLayout>
+
+</LinearLayout>

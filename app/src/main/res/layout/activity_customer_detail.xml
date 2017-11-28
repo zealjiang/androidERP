@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_height_values"
+            android:fitsSystemWindows="true"
+            android:paddingLeft="@dimen/marginTop"
+            android:paddingRight="@dimen/marginTop">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivHeader"
+                android:layout_width="@dimen/widget_height_width"
+                android:layout_height="@dimen/widget_height_width"
+                android:layout_centerVertical="true"
+                app:fadeDuration="300"
+                app:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivHeader"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/item_margin"
+                android:paddingRight="@dimen/item_margin">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_medium_16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_margin"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/common_gray_dark"
+                    android:textSize="@dimen/text_medium_14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/dianhua" />
+            />
+
+            <ImageView
+                android:id="@+id/ivMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/edit_height"
+                android:src="@mipmap/xinxi" />
+            />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_margin"
+            android:background="@color/common_gray_bg" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_height_value"
+            android:layout_gravity="bottom"
+            app:tabBackground="@android:color/white"
+            app:tabIndicatorColor="@color/common_blue_normal"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/common_blue_normal"
+            app:tabTextColor="@color/common_gray_dark" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

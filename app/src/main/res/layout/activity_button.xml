@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="clip_horizontal"
+    >
+
+    <com.jzg.erp.widget.CustomButton
+        android:layout_width="@dimen/padding_bottom"
+        android:layout_height="@dimen/layout_marginRight2"
+        android:text="CustomButton"
+        app:pressed_color="@color/colorPrimaryDark"
+        app:unpressed_color="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        app:shape_type="rectangle"
+        app:round_radius="@dimen/paddingRight"
+        />
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:layout_width="@dimen/padding_bottom"
+        android:layout_height="@dimen/padding_bottom"
+        android:text="CustomButton"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:textColor="@android:color/white"
+        app:pressed_color="@color/colorPrimaryDark"
+        app:ripple_color="@color/colorPrimaryDark"
+        app:ripple_duration="1000"
+        app:shape_type="circle"
+        app:round_radius="@dimen/paddingRight"
+        />
+
+    <com.jzg.erp.widget.ClearableEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_marginRight2"
+        android:padding="@dimen/padding_distance"
+        android:background="@drawable/shape_edittext"
+
+        />
+
+</LinearLayout>

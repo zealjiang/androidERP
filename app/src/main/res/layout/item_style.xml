@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_001">
+
+    <ImageView
+        android:id="@+id/masonry_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@+id/masonry_item_title"
+        android:src="@mipmap/guanbi"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/masonry_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:text=""/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.jzg.erp.widget.CustomButton
+        android:id="@+id/btnAddFocusCar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:text="+添加关注车"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/common_blue_normal"
+        app:pressed_color="@color/common_gray_bg"
+        app:round_radius="3dp"
+        app:shape_type="rectangle"
+        app:unpressed_color="@android:color/white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jzg.erp.widget.XRecyclerView
+            android:id="@+id/customer_xrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.jzg.erp.widget.XRecyclerView>
+
+        <com.jzg.erp.widget.ErrorView
+            android:id="@+id/err_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></com.jzg.erp.widget.ErrorView>
+    </RelativeLayout>
+
+</LinearLayout>

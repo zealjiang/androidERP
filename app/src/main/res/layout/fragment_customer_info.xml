@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_gray_bg"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_corner_white_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/bianji01"
+                    android:drawablePadding="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/modify_loved_car"
+                    android:textColor="@color/common_blue_normal" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            style="@style/common_data_item_layout"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/wanted_car" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvWantedCar"
+                style="@style/common_data_item_value"
+                android:maxLines="5"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/gear" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGear"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/budget" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBudget"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            style="@style/common_data_item_layout"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/extra" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvExtraInfo"
+                style="@style/common_data_item_value"
+                android:maxLines="50"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/common_gray_bg" />
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/customer_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCustomerName"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/contact" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvContact"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/phone_number" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvMobile"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/gender" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGender"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/idcard" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvIDCard"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+
+        <LinearLayout style="@style/common_data_item_layout"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+
+                android:text="通讯地址" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvAddress"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/customer_status" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCustomerStatus"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/prebuy_time" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvPrebuyTime"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/customer_type" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvCustomerType"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/buy_via" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBuyVia"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/customer_from" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvFrom"
+                style="@style/common_data_item_value"
+                android:text="暂无数据" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

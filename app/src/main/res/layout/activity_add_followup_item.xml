@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.activity.AddFollowupItemActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            android:id="@+id/llNextFollowupTime"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvNextFollowupTimeKey"
+                style="@style/common_data_item_key"
+                android:text="@string/next_followup_time" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvNextFollowupTime"
+                style="@style/style_right_arr_text" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            android:id="@+id/llTimeDuration"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/timeDuration" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvTimeDuration"
+                style="@style/style_right_arr_text"
+                android:text="@string/time_distance" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            android:id="@+id/llExtraInfo"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/extra_info" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvExtraInfo"
+                style="@style/style_right_arr_text"
+                android:hint="@string/text_max" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+    </LinearLayout>
+
+
+</LinearLayout>

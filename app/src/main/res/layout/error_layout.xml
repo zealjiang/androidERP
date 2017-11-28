@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="网络异常，请重新加载"
+        android:textSize="18sp" />
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:id="@+id/btnError"
+        style="@style/style_common_blue_round_corner_button"
+        android:layout_marginTop="20dp"
+        android:text="重新加载" />
+</LinearLayout>

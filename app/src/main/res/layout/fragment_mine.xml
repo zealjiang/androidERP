@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.fragment.CustomerFragment">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_gray_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_account_inf"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@drawable/item_bg_selector"
+            >
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/zhanghu"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/iv_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/account_inf"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/jt"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:background="@color/common_gray_line"/>
+
+        <!---->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/common_gray_line"/>
+        <RelativeLayout
+            android:id="@+id/rl_tool"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_bg_selector"
+            >
+
+            <ImageView
+                android:id="@+id/iv_tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/gongju"
+                />
+
+            <TextView
+                android:id="@+id/tv_tool"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/iv_tool"
+                android:gravity="center_vertical"
+                android:text="@string/tool"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/jt"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:background="@color/common_gray_line"/>
+
+        <!---->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/common_gray_line"/>
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_bg_selector"
+            >
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/shezhi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/iv_setting"
+                android:gravity="center_vertical"
+                android:text="@string/setting"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/jt"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

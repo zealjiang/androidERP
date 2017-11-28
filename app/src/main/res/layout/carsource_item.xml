@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/smaple_pading">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sv_img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/drop_down_checked"
+        fresco:placeholderImage="@drawable/ic_default"
+        fresco:placeholderImageScaleType="focusCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sv_img"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/text_large_18sp" />
+
+        <LinearLayout
+            android:id="@+id/llDateAndMiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paddingRight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_medium_16sp" />
+
+            <TextView
+                android:id="@+id/tv_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_11"
+                android:textSize="@dimen/text_medium_16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paddingRight"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jzg.erp.widget.CustomTextView
+                android:id="@+id/sv_status"
+                style="@style/style_common_stroke_roundcorner_statue"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_small_12sp" />
+
+            <com.jzg.erp.widget.CustomTextView
+                android:id="@+id/sv_status1"
+                style="@style/style_common_stroke_roundcorner_statue"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tag_margin"
+                android:textSize="@dimen/text_small_12sp"
+                />
+
+            <com.jzg.erp.widget.CustomTextView
+                android:id="@+id/sv_status2"
+                style="@style/style_common_stroke_roundcorner_statue"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tag_margin"
+                android:textSize="@dimen/text_small_12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/tag_margin"
+                android:textColor="@color/common_red_normal"
+                android:textSize="@dimen/text_medium_14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

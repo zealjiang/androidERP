@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_click"
+    android:paddingBottom="5dip">
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:background="@color/title"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dip"
+        android:textColor="@color/grey3"
+        android:visibility="gone" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/car_image"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_below="@id/alpha"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_image"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@+id/car_image"
+        android:singleLine="true"
+        android:textColor="@color/topic_content_bg"
+        android:textSize="16sp" />
+
+</RelativeLayout>

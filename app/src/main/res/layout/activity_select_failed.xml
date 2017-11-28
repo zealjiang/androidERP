@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SelectFailedReasonActivity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/style_common_line" />
+
+        <RelativeLayout
+            android:id="@+id/llReasonPrice"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/reason_price" />
+
+            <CheckBox
+                android:id="@+id/cbReasonPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_checkbox_selector"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+        <RelativeLayout
+            android:id="@+id/llReasonCar"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/reason_car" />
+
+            <CheckBox
+                android:id="@+id/cbReasonCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_checkbox_selector"
+                android:button="@null" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+        <RelativeLayout
+            android:id="@+id/llZonePolicy"
+            style="@style/common_data_item_layout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/zone_policy" />
+
+            <CheckBox
+                android:id="@+id/cbZonePolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_checkbox_selector"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <View style="@style/style_common_line" />
+
+        <LinearLayout
+            android:id="@+id/llReasonOther"
+            style="@style/common_data_item_layout"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/common_data_item_key"
+                android:text="@string/reason_other" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvReasonOther"
+                style="@style/style_right_arr_text" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+    </LinearLayout>
+
+</LinearLayout>

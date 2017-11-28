@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_white_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/common_gray_line" />
+
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="15dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tools_xianqian_city"
+                style="@style/small_white_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_left_bg"
+                android:gravity="center"
+                android:text="按城市"
+                android:textColor="@drawable/valuation_button_color" />
+
+            <Button
+                android:id="@+id/tools_xianqian_paifangbz"
+                style="@style/small_grey_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_right_bg"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="按排放标准"
+                android:textColor="@drawable/valuation_button_color" />
+        </LinearLayout>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="以下结果仅供参考，不作为交易数据。"
+            style="@style/small_grey_text_style"/>
+        <LinearLayout
+            android:id="@+id/xianqian_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"/>
+</LinearLayout>

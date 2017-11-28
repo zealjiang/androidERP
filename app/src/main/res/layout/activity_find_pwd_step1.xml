@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.activity.FindPwdStep1Activity">
+
+    <include layout="@layout/comm_white_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/style_common_line" />
+
+        <com.jzg.erp.widget.ClearableEditText
+            android:id="@+id/etAccount"
+            style="@style/style_common_edittext"
+            android:hint="@string/phone_number"
+            android:inputType="phone" />
+
+        <View
+            style="@style/style_common_line"
+            android:layout_marginLeft="@dimen/smaple_pading" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jzg.erp.widget.ClearableEditText
+                android:id="@+id/etSMSCode"
+                style="@style/style_common_edittext"
+                android:layout_weight="1"
+                android:hint="@string/sms_code"
+                android:inputType="number" />
+
+            <github.arobot.countdownbuttonlibrary.CountDownButton
+                android:id="@+id/tvSendCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_height"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:textColor="@color/common_blue_normal"
+                android:textSize="@dimen/text_medium_16sp"
+                android:text="@string/send_verification_code"
+                app:countDown="60"
+                app:countDownInterval="1000"
+                app:countDownStrFormatter="%ss后重发" />
+        </LinearLayout>
+
+        <View style="@style/style_common_line" />
+    </LinearLayout>
+
+    <com.jzg.erp.widget.CustomRippleButton
+        android:id="@+id/btnNext"
+        style="@style/style_common_blue_round_corner_button"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/next_step" />
+
+
+</LinearLayout>

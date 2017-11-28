@@ -1,0 +1,65 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="round_radius">0dp</dimen>
+    <dimen name="btn_radius">2dp</dimen>
+
+    <!-- 标题字体大小 -->
+    <dimen name="text_large_20sp">20sp</dimen>
+    <!-- 提交按钮字体大小 -->
+    <dimen name="text_large_18sp">18sp</dimen>
+    <!-- 普通字体大小 -->
+    <dimen name="text_medium_16sp">16sp</dimen>
+    <!-- 普通字体大小 -->
+    <dimen name="text_medium_14sp">14sp</dimen>
+    <!-- 普通字体大小 -->
+    <dimen name="text_small_12sp">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+    <dimen name="tag_margin">5dp</dimen>
+    <!-- ListView相关配置-->
+    <dimen name="dividerHeight">1px</dimen>
+    <dimen name="paddingRight">5dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="smaple_pading">10dp</dimen>
+    <dimen name="history_list_top">10dp</dimen>
+    <dimen name="edit_height">50dp</dimen>
+    <dimen name="head_edit_height">80dp</dimen>
+    <dimen name="padding">20dip</dimen>
+    <dimen name="layout_marginRight2">40dp</dimen>
+    <dimen name="layout_marginLeft2">15dp</dimen>
+    <dimen name="margin_single_button">50dp</dimen>
+    <!-- 2016.06.30-->
+    <dimen name="widget_width">8dp</dimen>
+    <dimen name="widget_height">13dp</dimen>
+    <dimen name="widget_height_width">64dp</dimen>
+    <dimen name="widget_margin_right">60dp</dimen>
+    <dimen name="padding_bottom">100dp</dimen>
+    <dimen name="layout_height">120dp</dimen>
+    <dimen name="layout_marginTop">8dp</dimen>
+    <dimen name="padding_distance">1dp</dimen>
+    <dimen name="marginTop">30dp</dimen>
+    <dimen name="padding_customRippleButton">6dp</dimen>
+    <dimen name="widget_height_values">120dp</dimen>
+    <dimen name="widget_height_value">48dp</dimen>
+    <dimen name="widget_height_more">54dp</dimen>
+    <dimen name="margin_bottom">130dp</dimen>
+    <dimen name="margin_bottom_less">80dp</dimen>
+    <dimen name="layout_width_value">250dip</dimen>
+
+
+   <!-- <dimen name="widget_weight">1</dimen>-->
+   <!-- <dimen name="widget_weight_more">3</dimen>-->
+   <!-- <dimen name="maxLength">10</dimen>-->
+    <!--<dimen name="maxLength_more">11</dimen>-->
+    <!--<dimen name="count_down">60</dimen>-->
+    <!--<dimen name="progressBar_max">100</dimen>-->
+   <!-- <dimen name="fade_duration">300</dimen>-->
+    <!--<dimen name="ripple_duration">1000</dimen>-->
+
+</resources>

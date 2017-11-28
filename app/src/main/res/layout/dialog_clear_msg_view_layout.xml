@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dialog_hint_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/text_medium_16sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_hint_view_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/text_medium_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_common_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dialog_hint_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="@color/green_common_text"
+                android:textSize="@dimen/text_medium_16sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_common_line" />
+
+            <Button
+                android:id="@+id/btn_dialog_hint_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/green_common_text"
+                android:textSize="@dimen/text_medium_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

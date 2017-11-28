@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    tools:context="com.jzg.erp.ui.fragment.CustomerFragment">
+
+    <include layout="@layout/comm_white_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/item_margin"
+            android:background="@color/common_gray_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_break_rule"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_bg_selector"
+            >
+
+            <TextView
+                android:id="@+id/tv_break_rule"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/break_rules_query"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="@dimen/text_medium_14sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/jt"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:background="@color/common_gray_line"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_limit_change"
+            style="@style/list_item_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/item_bg_selector"
+            >
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/limit_change_query"
+                android:textColor="@color/common_gray_dark"
+                android:textSize="@dimen/text_medium_14sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/jt"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="0dp"
+            android:background="@color/common_gray_line"/>
+
+    </LinearLayout>
+</LinearLayout>
